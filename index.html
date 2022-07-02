@@ -14,7 +14,7 @@
     <h1 class="text-6xl text-blue-700 text-center p-4">Hello, Tailwind</h1>
 
     <div class="p-4 border-solid border-2 border-sky-500">
-      <h2 class="text-4xl my-6">Image Container</h2>
+      <h2 class="text-4xl my-6 text-center">Image Container</h2>
       <div class="flex flex-wrap gap-4">
         <img src="https://picsum.photos/id/1/200/300" alt="" class="flex-1 basis-1/4  max-h-70  object-contain">
         <img src="https://picsum.photos/id/2/200/300" alt="" class="flex-1 basis-1/4  max-h-70  object-contain">
@@ -22,10 +22,28 @@
         <img src="https://picsum.photos/id/4/200/300" alt="" class="flex-1 basis-1/4  max-h-70  object-contain">
         <img src="https://picsum.photos/id/5/200/300" alt="" class="flex-1 basis-1/4  max-h-70  object-contain">
         <img src="https://picsum.photos/id/6/200/300" alt="" class="flex-1 basis-1/4  max-h-70  object-contain">
-				<img src="https://picsum.photos/id/7/200/300" alt="" class="flex-1 basis-1/4  max-h-70  object-contain">
-				<img src="https://picsum.photos/id/8/200/300" alt="" class="flex-1 basis-1/4  max-h-70  object-contain">
+        <img src="https://picsum.photos/id/7/200/300" alt="" class="flex-1 basis-1/4  max-h-30  object-contain">
+        <img src="https://picsum.photos/id/8/200/300" alt="" class="flex-1 basis-1/4  max-h-30  object-contain">
       </div>
-    </div>
+    </div> <!-- Image -->
+    <form class="grid grid-cols-2 p-4 border-solid border border-black w-full max-w-4xl items-center mx-auto gap-4">
+      <h2 class="text-3xl text-center col-span-full">Form Part</h2>
+      <div class="flex col-span-full md:col-span-1">
+        <label for="first-name" class="after:content-[':']">First Name</label>
+        <input type="text" name="first-name" id="first-name" class="border flex-grow">
+      </div>
+      <div class="flex  col-span-full md:col-span-1">
+        <label for="last-name" class="after:content-[':']">Last Name</label>
+        <input type="text" name="last-name" id="last-name" class="border flex-grow">
+      </div>
+      <div class="flex col-span-full">
+        <label for="email" class="after:content-[':']">Email</label>
+        <input type="email" name="email" id="email" class="border flex-grow">
+      </div>
+      <button class="bg-green-500 text-white font-bold py-2 px-4 rounded col-span-full m-2 mx-auto w-full md:w-2/4" type="button">
+        Sign Up
+      </button>
+    </form>
   </div>
 </body>
 
